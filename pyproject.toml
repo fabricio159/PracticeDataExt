@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my-project"
+version = "0.1.0"
+description = "Week 1 HTTP client"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx[http2]",
+    "parsel",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-httpx"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
