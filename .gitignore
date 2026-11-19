@@ -30,3 +30,13 @@ htmlcov/
 
 # Scraper output (regenerate with: python -m week01_http.scrape)
 quotes.json
+
+# job_watch snapshots and diffs (local run history)
+data/
+
+# Web page (web/): dependencies and build output
+web/node_modules/
+web/dist/
+
+# Jenkins / ci/run_job_watch.sh output
+reports/

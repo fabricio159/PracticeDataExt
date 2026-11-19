@@ -21,3 +21,5 @@ where = ["src"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["src"]
+addopts = "-m 'not network'"
+markers = ["network: hits the real quotes.toscrape.com (run with: pytest -m network)"]
