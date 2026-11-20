@@ -11,7 +11,7 @@ pipeline {
     }
 
     parameters {
-        string(name: 'DATA_ROOT', defaultValue: '',
+        string(name: 'DATA_ROOT', defaultValue: '/srv/job-watch-data',
                description: 'Folder that keeps the snapshots between builds. ' +
                             'Empty = $HOME/job-watch-data of the user running the agent.')
     }
